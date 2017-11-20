@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (function() {
     'use strict';
 
@@ -51,3 +52,6 @@
         countDown();
     });
 })();
+=======
+
+>>>>>>> refs/remotes/origin/master

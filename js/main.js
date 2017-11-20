@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (function() {
     'use strict';
 
@@ -37,6 +36,7 @@
             if(timeLeft < 0) {
                 clearTimeout(timerId);
                 timeLeft = 0;
+                timeToCountDown = 0;
                 updateTimer(timeLeft);
                 return;
             }
@@ -52,6 +52,3 @@
         countDown();
     });
 })();
-=======
-
->>>>>>> refs/remotes/origin/master

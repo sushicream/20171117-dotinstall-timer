@@ -9,7 +9,8 @@
 
     var startTime;
     var timeLeft;
-    var timeToCountDown = 4 * 1000;
+    // var timeToCountDown = 4 * 1000;
+    var timeToCountDown = 0;
     var timerId;
 
     // 分・秒に変換
@@ -45,10 +46,17 @@
         }, 10);
     }
 
-    // スタートボタン
+    // Startボタン
     start.addEventListener('click', function() {
         // 開始時刻
         startTime = Date.now();
         countDown();
+    });
+
+    // Minボタン
+    min.addEventListener('click', function(){
+        // 1分 = 60 * 1000ミリ秒
+        timeToCountDown += 60 * 1000;
+        updateTimer(timeToCountDown);
     });
 })();
